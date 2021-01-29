@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <body style = "background-color:black;">
+        <style>
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                 }
+        
+        .centertext {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            font-family: monospace;
+        }
+        
+        .sendButton {
+            color: white;
+            background-color: black;
+            padding-right: 10%;
+            display: inline-block;
+        
+        }
+        
+        /* Fade in Animation */
+        .fade-in {
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+        -moz-animation: fadeIn ease 3s;
+        -o-animation: fadeIn ease 3s;
+        -ms-animation: fadeIn ease 3s;
+        }
+        @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+            </style>
+
+<link rel="stylesheet" href="stylesheets/tharbutton.css">
+
+  <div class = "">
+    <img src = "images/Logo.PNG" class = "center" width = "20%"></img></div>
+    <h1 class = "centertext" width = "50%">Account Balance: 23.056 Swocoin</h1>
+    <div>c</div>
+    <div>s</div>
+
+    <form>
+    
+        <div class="group">      
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Swocoin Address</label>
+        </div>
+          
+        <div class="group">      
+          <input type="text" required>
+          <span class="highlight center"></span>
+          <span class="bar"></span>
+          <label>Swocoin Amount</label>
+        </div>
+      </form>
+</html>

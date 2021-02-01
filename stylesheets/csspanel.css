@@ -1,37 +1,7 @@
-
-/* basic style definition */
-/* •••••••••••••••••••••••••••••••• */
-
-body {
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-family: 'Roboto Slab', serif; }
-
-
-h1 {
-margin: 0;
-user-select: none;
-text-align: center;
-font-weight: 300; }
-
-
-p, {
-font-weight: 300;
-color: #546E7A;
-user-select: none;
-text-align: center;
-margin: 0; }
-
-
-a { 
-text-align: center;
-text-decoration: none;
-color: #FFF; }
-
 /* Navigation menu */
 /* •••••••••••••••••••••••••••••••• */
 
-.menu {
+.panelmenu {
 position: fixed;
 width: 100vw;
 pointer-events: none;
@@ -40,7 +10,7 @@ text-align: center;
 z-index: 2; }
 
 /* Menu link item */
-.menu__link {
+.panelmenu__link {
 display: inline-block;
 text-decoration: none;
 border: 2px solid #263238;

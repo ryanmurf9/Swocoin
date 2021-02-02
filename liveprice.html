@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Price'],
+          ['20:30',  1000],
+          ['20:31',  1170],
+          ['20:32',  660],
+          ['20:33',  1030],
+          ['20:34',  1170],
+          ['20:35',  660],
+          ['20:36',  1030]
+        ]);
+
+        var options = {
+          title: 'Swocoin Value',
+
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    </head> 
+    <body>
+      <style>
+        .selectedpage{
+        background-color: white;
+        color: black;
+    }
+
+    .titleheader{
+        float: left;
+        padding-left: 20%;
+        color:black;
+        font-family: monospace;
+    }
+
+    .brlarge { 
+            display: block; 
+            margin-bottom: 7em; 
+        } 
+
+        .brhuge { 
+            display: block; 
+            margin-bottom: 20em; 
+        }
+
+        .brmedium { 
+            display: block; 
+            margin-bottom: 4em; 
+        } 
+
+      </style>
+    <link rel="stylesheet" href="stylesheets/sidenav.css">
+    
+    <div class="sidenav" style="width: 15.8%">
+        <a href="index.html">
+        <img src = "images/Logo.PNG" width = "90%" class = "center"></img>
+        </a>
+        <a href="unconfirmed-transactions.html" class = "sidelink">Unconfirmed Transactions</a>
+        <a href="blocks.html" class = "sidelink">Blocks</a>
+        <a href="liveprice.html" class = "sidelink selectedpage" style = "color: black;">Live Price</a>
+        </div>
+    
+        <h1 class="titleheader">Live Price</h1>
+        <br class="brhuge">
+        <br class="brhuge">
+        <br class="brhuge">
+        <br class="brhuge">
+        
+
+        <div id="curve_chart" style="width: 80%; height: 300px; padding-left: 20%;"></div>
+
+
+    </body>
+</html>

@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        
+
+    </head>
 <body>
     <style>
         .selectedpage{
@@ -15,8 +19,10 @@
     </style>
 <link rel="stylesheet" href="stylesheets/ledgertable.css">
 <link rel="stylesheet" href="stylesheets/sidenav.css">
+<link href="scripts/tabulator-master/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="scripts/tabulator-master/dist/js/tabulator.min.js"></script>
 
-<div class="sidenav">
+<div class="sidenav" style="width: 15.85%;">
     <a href="index.html">
     <img src = "images/Logo.PNG" width = "90%" class = "center"></img>
     </a>
@@ -26,89 +32,22 @@
     </div>
 
     <h1 class="titleheader">Blocks</h1>
-<div class="table-wrapper" style = "padding-left: 13%;">
-    <table class="fl-table">
-        <thead>
-        <tr>
-            <th>Height</th>
-            <th>Hash</th>
-            <th>Mined</th>
-            <th>Miner</th>
-            <th>Size</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tr>
-            <td>668692</td>
-            <td>396a2ee2bca1a675ff3805408d905982b219d70ce22d039ab467290fa502c58b</td>
-            <td>5 minutes</td>
-            <td>Unknown</td>
-            <td>1,340,033 bytes</td>
-        </tr>
-        <tbody>
-    </table>
-</div>
+    <br><br><br><br>
+
+    <div id="example-table" style="width: 83%; float: right;"></div>
+
+        <script>
+var table = new Tabulator("#example-table", {
+        height: false,// set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+         layout:"fitColumns", //fit columns to width of table (optional)
+         responsiveLayout: true,
+ 	    columns:[ //Define Table Columns
+	 	{title:"Height", field:"height", align:"center"},
+	 	{title:"Hash", field:"hash", align:"center"},
+	 	{title:"Mined", field:"mined", align:"center"},
+         {title:"Miner", field:"miner", align:"center"},
+         {title:"Size", field:"size", align:"center"},
+ 	],
+});
+        </script>
 </body>
